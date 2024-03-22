@@ -1,0 +1,41 @@
+body::before {
+  content: "";
+  filter: blur(50px) opacity(0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: calc(489px * var(--zoom));
+  width: calc(572px * var(--zoom));
+  background: url(./background_pic.png) no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  -webkit-user-drag: none;
+  z-index: -1;
+}
+
+.content {
+  margin: 10rem auto 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Inter", sans-serif;
+}
+.content_title {
+  font-weight: 700;
+  font-size: 5.6rem;
+  font-style: italic;
+}
+.content_expl {
+  padding: 8px 0;
+  font-weight: 300;
+  font-size: 3.2rem;
+}
+.content_expl span {
+  font-size: 3.8rem !important;
+  font-weight: 500 !important;
+}
+.content_expl p:first-child, .content_expl p:last-child {
+  padding: 34px 0;
+}
+.content_expl p:first-child {
+  font-style: italic;
+}/*# sourceMappingURL=Help.css.map */
