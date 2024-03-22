@@ -1,0 +1,60 @@
+.content{
+    margin: 100px 32rem;
+    width: 100%;
+    font: {
+        family: "Inter", sans-serif;
+        style: italic;
+    }
+
+    &_icon{
+        font: {
+            size: 8rem;
+            weight: 800;
+        }
+        padding: 0 0 72px;
+    }
+    &_expl{
+        font-size: 4.2rem;
+    }
+}
+$features: (
+    top: 70px,
+    left: 20rem,
+    radius: 230px,
+    bgcolor: #3733E0,
+),(
+    top: 120px,
+    left: 34rem,
+    radius: 200px,
+    bgcolor: #33B7E0,
+),(
+    top: 172px,
+    left: 26rem,
+    radius: 212px,
+    bgcolor: #33E0A2,
+);
+
+.decoration{
+
+    .crcl{
+        position: absolute;
+        width: 124px;
+        height: 40px;
+        filter: blur(40px);
+    }
+}
+
+$num: 0;
+@each $feature in $features{
+    $num: $num + 1;
+    #crcl#{$num}{
+        top: map-get($feature, top);
+        left: map-get($feature, left);
+        height: map-get($feature, radius);
+        width: map-get($feature, radius);
+        background-color: map-get($feature, bgcolor);
+        border-radius: 50%;
+        opacity: 24%;
+        z-index: -1;
+    }
+}

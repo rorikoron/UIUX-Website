@@ -1,0 +1,54 @@
+.content {
+  margin: 100px 32rem;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+}
+.content_icon {
+  font-size: 8rem;
+  font-weight: 800;
+  padding: 0 0 72px;
+}
+.content_expl {
+  font-size: 4.2rem;
+}
+
+.decoration .crcl {
+  position: absolute;
+  width: 124px;
+  height: 40px;
+  filter: blur(40px);
+}
+
+#crcl1 {
+  top: 70px;
+  left: 20rem;
+  height: 230px;
+  width: 230px;
+  background-color: #3733E0;
+  border-radius: 50%;
+  opacity: 24%;
+  z-index: -1;
+}
+
+#crcl2 {
+  top: 120px;
+  left: 34rem;
+  height: 200px;
+  width: 200px;
+  background-color: #33B7E0;
+  border-radius: 50%;
+  opacity: 24%;
+  z-index: -1;
+}
+
+#crcl3 {
+  top: 172px;
+  left: 26rem;
+  height: 212px;
+  width: 212px;
+  background-color: #33E0A2;
+  border-radius: 50%;
+  opacity: 24%;
+  z-index: -1;
+}/*# sourceMappingURL=Other.css.map */
