@@ -1,0 +1,87 @@
+:root{
+    --zoom: 0.8;
+}
+
+html{
+    font-size: 8.4px !important;
+    color: white;
+}
+body{
+    background-color: #151515;
+    height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.icon{
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.menubar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+    align-items: center;
+    width: 100%;
+    padding: 10px 32px;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+}
+.menubar_icon > a{
+    height: 80px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    transition: 0.6s all;
+    position: relative;
+}
+.menubar_icon{
+    flex: 0 1 31rem;
+    font-size: 4.5rem !important;
+}
+.menubar_list{
+    height: 100%;
+    flex: 1 1 64rem;
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: row;
+}
+.menubar_list > li{
+    flex: 0 1 22rem;
+}
+.menubar a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubar_list li{
+    list-style: none;
+}
+.menubar_signin{
+    flex: 0 1 20rem;
+    text-align: center;
+}
+
+.menubar_link{
+    width: 100%;
+    font-weight: 300;
+    font-size: 2.5rem;
+    position: relative;
+}
+.menubar_link::after{
+    content: "";
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    transition: all 0.6s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+.menubar_link:hover::after{
+    width: 100%;
+}
