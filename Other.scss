@@ -1,5 +1,11 @@
+.wrapper{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    position: relative;;
+}
 .content{
-    margin: 100px 32rem;
+    margin: 0 22rem;
     width: fit-content;
     font: {
         family: "Inter", sans-serif;
@@ -11,50 +17,77 @@
             size: 8rem;
             weight: 800;
         }
-        padding: 0 0 72px;
+        padding: 0 0 38px;
     }
     &_expl{
         font-size: 4.2rem;
     }
 }
-$features: (
-    top: 70px,
-    left: 20rem,
-    radius: 230px,
-    bgcolor: #3733E0,
-),(
-    top: 120px,
-    left: 34rem,
-    radius: 200px,
-    bgcolor: #33B7E0,
-),(
-    top: 172px,
-    left: 26rem,
-    radius: 212px,
-    bgcolor: #33E0A2,
-);
 
 .decoration{
 
-    .crcl{
-        position: absolute;
-        width: 124px;
-        height: 40px;
-        filter: blur(40px);
-    }
-}
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    width: 569px;
+    height: 558px;
+    filter: blur(120px);
 
-$num: 0;
-@each $feature in $features{
-    $num: $num + 1;
-    #crcl#{$num}{
-        top: map-get($feature, top);
-        left: map-get($feature, left);
-        height: map-get($feature, radius);
-        width: map-get($feature, radius);
-        background-color: map-get($feature, bgcolor);
-        border-radius: 50%;
-        opacity: 24%;
-        z-index: -1;
+    .crcl{
+        opacity: 0.5;
+    }
+    #crcl1{
+        /* Ellipse 1 */
+
+        position: absolute;
+        left: 5.62%;
+        right: 41.83%;
+        top: 4.12%;
+        bottom: 45.34%;
+
+        background: rgba(159, 51, 224, 0.3);
+        backdrop-filter: blur(25px);
+    }
+    #crcl3{
+        position: absolute;
+        left: 34.62%;
+        right: 18.45%;
+        top: 13.08%;
+        bottom: 47.67%;
+        
+        background: rgba(51, 79, 224, 0.3);
+        backdrop-filter: blur(25px);
+    }
+    #crcl4{
+        position: absolute;
+        left: 51.67%;
+        right: 1.58%;
+        top: 36.56%;
+        bottom: 24.37%;
+        
+        background: rgba(224, 155, 51, 0.3);
+        backdrop-filter: blur(25px);
+    }
+    #crcl5{
+        position: absolute;
+        left: 53.25%;
+        right: 0%;
+        top: 0%;
+        bottom: 60.75%;
+        
+        background: rgba(51, 224, 162, 0.3);
+        backdrop-filter: blur(25px);
+    }
+
+    #crcl2{
+        position: absolute;
+        left: 0%;
+        right: 40.07%;
+        top: 48.57%;
+        bottom: 0%;
+
+        background: rgba(51, 79, 224, 0.3);
+        backdrop-filter: blur(25px);
     }
 }
