@@ -52,9 +52,14 @@ $main_clr: #ECECEC;
     position: relative;
     font-family: "Inter", sans-serif;
     &_content{
+        overflow-y: hidden;
         height: 100%;
         padding: 48px 38px;
+        .card_wrap{
+        height: 100%;
+        overflow-y: scroll;
 
+        }
         div{
             margin: 16px 0;
         }

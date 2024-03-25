@@ -49,8 +49,13 @@
   font-family: "Inter", sans-serif;
 }
 .card_content {
+  overflow-y: hidden;
   height: 100%;
   padding: 48px 38px;
+}
+.card_content .card_wrap {
+  height: 100%;
+  overflow-y: scroll;
 }
 .card_content div {
   margin: 16px 0;
