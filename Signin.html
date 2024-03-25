@@ -3,7 +3,6 @@
     <!-- common import -->
     <link rel="stylesheet" href="./Header.css">
     <meta charset="UTF-8">
-
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,13 +10,13 @@
     <!-- reset.css ress -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    
+
     <!-- modify each site-->
-    <link rel="stylesheet" href="./Member.css">
-    <title>Member</title>
+    <link rel="stylesheet" href="./Signin.css">
+    <title>Sign-in</title>
 </head>
 <body>
-    
+
     <!-- header -->
     <nav class="menubar">
         <span class="menubar_icon icon"><a href="./index.html">Team</a></span>
@@ -29,38 +28,31 @@
         </ul>
         <span class="menubar_signin menubar_link"><a href="./Signin.html">Sing-in</a></span>
     </nav>
-
     <div class="wrapper">
-
-        <div class="arrow arrow_l"></div>
-        <div class="arrow arrow_r"></div>
-        <div class="card">
-            <div class="decorate">
-                <div class="rec" id="rec4"></div>
-                <div class="rec" id="rec3"></div>
-                <div class="rec" id="rec2"></div>
+        <div class="form">
+            <div class="decoration">
                 <div class="rec" id="rec1"></div>
+                <div class="rec" id="rec2"></div>
+                <div class="rec" id="rec3"></div>
+                <div class="rec" id="rec4"></div>
             </div>
-
-            <div class="card_content">
-
-                <span class="card_title" id="name">Lorem</span>
-                <div class ="card_expl">
-                    性別 : <span id="sex"></span><br>
-                    學歷 : <span id="background"></span><br>
-                    愛好 : <span id="speciality"></span><br>
-                    專長 : <span id="hobby"></span>
-                </div>
-                <div class="card_academy">
-                    研究主題 : <span id="theme"></span>
-                </div>
-                <div class="card_ps">
-                    特殊經歷 : <br><span id="carrer"></span>
-                </div>
-            </div>
-
-
+            <form action="">
+                <fieldset>
+                    <legend>Wanna Sign-in</legend>
+                    <div class="input">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" placeholder="example: abc123@gmail.com"><br>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" placeholder="your password"><br>
+                    </div>
+                    <div class="checkbox">
+                        <label for="remember"></label>
+                        <input type="checkbox" id="remember">Remember me
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
-    <script src="Member.js"></script>
 </body>

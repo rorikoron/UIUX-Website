@@ -13,19 +13,23 @@ body::before{
     -webkit-user-drag: none;
     z-index: -1;
 }
+.wrapper{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
 .content{
-    margin: 4.5rem 0;
     text-align: center;
     width: 100%;
     font-family: "Inter", sans-serif;
 }
 .content_icon{
-    font-size: 12rem;
+    font-size: 10rem;
     padding: 0 0 30px;
 }
 .content > p{
     font-weight: 100;
-    font-size: 5rem;
+    font-size: 4rem;
     font-style: italic;
     font-weight: 300;
 }

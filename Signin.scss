@@ -1,0 +1,123 @@
+$main_clr: #ECECEC;
+
+.wrapper{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 94rem;
+    height: 472px;
+    box-sizing: border-box;
+    border: 1px solid $main_clr;
+    border-radius: 16px;
+    position: relative;
+    color: $main_clr;
+    font-family: "Inter", sans-serif;
+}
+fieldset{
+    width: fit-content;
+    margin-left: 12.8rem;
+    font-size: 2.8rem;
+    padding: 62px 0;
+    legend{
+        position: absolute;
+    }
+
+    input{
+        &[type=email], &[type=password]{
+            width: 64rem;
+            margin: 10px 0;
+            padding: 1px;
+            background-color: $main_clr;
+            border-radius: 2px;
+        }
+
+        &[type=checkbox]{
+            margin: 22px 8px 22px 0;
+            font-size: 12px;
+            position: relative;
+
+            -webkit-appearance: none;
+            appearance: none;
+
+            border: 1px solid $main_clr;
+            height: 2rem;
+            width: 2rem;
+            cursor: pointer;
+            transition: all 0.4s;
+
+            &:checked{
+                transform: rotate(45deg);
+                opacity: 0;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        
+    }
+    .input{
+        padding-top: 44px;
+    }
+    .checkbox{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+$features: (
+    (
+        top: 18px,
+        right: 8.2rem,
+        bgcolor: #334FE0,
+    ), (
+        top: 34px,
+        right: -2rem,
+        bgcolor: #9F33E0,
+    ), (
+        bottom: 22px,
+        left: -2rem,
+        bgcolor: #334FE0,
+    ), (
+        bottom: 2px,
+        left: 12rem,
+        bgcolor: #B3E033,
+    )
+);
+
+.decoration{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.02);
+    clip-path: inset(0 0 0 0 round 25px);
+    z-index: -1;
+    filter: blur(66px);
+
+    >.rec{
+        height: 58px;
+        width: 12rem;
+        position: absolute;
+    }
+
+    $num: 0;
+    @each $feature in $features{
+        $num: $num + 1;
+        #rec#{$num}{
+            @if map-has-key($feature, top){
+                top: map-get($feature, top);
+                right: map-get($feature, right);
+            }@else{
+                bottom: map-get($feature, bottom);      
+                left: map-get($feature, left);
+            }
+            background-color: map-get($feature, bgcolor);
+        }
+    }
+}

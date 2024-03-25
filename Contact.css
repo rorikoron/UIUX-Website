@@ -1,6 +1,14 @@
 
+.menubar{
+}
+.wrapper{
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card{
-    margin: calc(8px * 8.6) auto 0;
     width: 56rem;
     min-width: 500px;
     height: 56rem;

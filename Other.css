@@ -1,6 +1,7 @@
 .content {
   margin: 100px 32rem;
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: "Inter", sans-serif;
   font-style: italic;
 }

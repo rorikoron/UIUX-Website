@@ -16,7 +16,8 @@ body{
 }
 
 .content{
-    margin: 10rem auto 0;
+  flex: 1 1 auto;
+  margin: 10rem auto 0;
     width: fit-content;
     font: {
         family: "Inter", sans-serif;
