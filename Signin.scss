@@ -11,9 +11,8 @@ $main_clr: #ECECEC;
     min-width: 800px;
     height: 420px;
     box-sizing: border-box;
-    border: 1px solid $main_clr;
+    border: 1px solid rgba(238, 204, 238, 0.385);
     border-radius: 25px;
-    clip-path: inset(0 0 0 0 round 25px);
     color: $main_clr;
     font-family: "Inter", sans-serif;
 }
@@ -48,14 +47,23 @@ form{
         }
     }
     .input_field{
+        
         position: relative;
         flex: 1 1 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
+        gap: 24px;
+
+        h4{
+            padding-left: 10%;
+            font-size: 2.8rem;
+            display: inline-block;
+        }
+
         input{
-            &[type=email], &[type=password]{
+            &[type=email], &[type=password], &[type=text]{
                 width: 90%;
                 font-size: 20px;
                 padding: 6px 8px;
@@ -68,7 +76,7 @@ form{
                     background-color: rgba(236, 236, 236, 0.25);
                 }
             }
-            &[type=submit]{
+            &[type=button]{
                 position: absolute;
                 right: 0;
                 bottom: 0;
@@ -121,8 +129,75 @@ form{
     }
 }
 
+.decoration{
 
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    width: 569px;
+    height: 558px;
+    filter: blur(120px);
 
+    .crcl{
+        opacity: 0.5;
+    }
+    #crcl1{
+        /* Ellipse 1 */
+
+        position: absolute;
+        left: 5.62%;
+        right: 41.83%;
+        top: 4.12%;
+        bottom: 45.34%;
+
+        background: rgba(159, 51, 224, 0.3);
+        backdrop-filter: blur(25px);
+    }
+    #crcl3{
+        position: absolute;
+        left: 34.62%;
+        right: 18.45%;
+        top: 13.08%;
+        bottom: 47.67%;
+        
+        background: rgba(51, 79, 224, 0.3);
+        backdrop-filter: blur(25px);
+    }
+    #crcl4{
+        position: absolute;
+        left: 51.67%;
+        right: 1.58%;
+        top: 36.56%;
+        bottom: 24.37%;
+        
+        background: rgba(224, 155, 51, 0.3);
+        backdrop-filter: blur(25px);
+    }
+    #crcl5{
+        position: absolute;
+        left: 53.25%;
+        right: 0%;
+        top: 0%;
+        bottom: 60.75%;
+        
+        background: rgba(51, 224, 162, 0.3);
+        backdrop-filter: blur(25px);
+    }
+
+    #crcl2{
+        position: absolute;
+        left: 0%;
+        right: 40.07%;
+        top: 48.57%;
+        bottom: 0%;
+
+        background: rgba(51, 79, 224, 0.3);
+        backdrop-filter: blur(25px);
+    }
+}
+
+/*
 .decoration{
     position: absolute;
     left: 38.12%;
@@ -182,4 +257,76 @@ form{
         background: rgba(51, 79, 224, 0.3);
         backdrop-filter: blur(25px);
     }
+}
+*/
+#modal_layer{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #30303099;
+
+    transition: all 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+#modal_window{
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 30px;
+    font-size: 1.8rem;
+    font-style: italic;
+    z-index: 10;
+    background-color: #151515;
+    transition: all 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    width: 70rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    color: #FF5A5A;
+}
+#modal_window h4{
+    font-size: 4rem;
+    font-weight: 600;
+}
+#modal_window > span{
+    flex: 1 0 auto;
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+#modal_button{
+    flex: 0 0 1fr;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+#modal_button > *{
+    border: 1px solid #ECECEC;
+    border-radius: 12px;
+    padding: 10px 24px;
+
+}
+#modal_button span{
+    font-size: 2.4rem;
+    color: #ECECEC;
+    cursor: pointer;
+}
+#modal_button > input{
+    height: fit-content;
+    width: 60%;
+}
+#btn_toward{
+    text-decoration: underline;
 }

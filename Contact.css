@@ -105,9 +105,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 12px;
     padding: 30px;
     font-size: 1.8rem;
-    height: fit-content;
     font-style: italic;
     z-index: 10;
     color: #FF5A5A;
@@ -115,20 +115,32 @@
     transition: all 0.4s;
     opacity: 0;
     visibility: hidden;
+    width: 70rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
 }
 #modal_window h4{
     font-size: 4rem;
     font-weight: 600;
 }
-#modal_window span{
+#modal_window > span{
+    flex: 1 0 auto;
     display: inline-block;
     padding: 20px 0;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 400;
 }
 
+#modal_button{
+    flex: 0 0 1fr;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 #modal_button span{
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 10px 24px;
     border: 1px solid #ECECEC;
     color: #ECECEC;

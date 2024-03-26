@@ -39,14 +39,15 @@
             </div>
             <form action="">
                 <div class="legend">
-                    <h3>Sign-in</h3>
-                    <aside>Use your account to sign-in.</aside>
-                    <a href="./Register.html">Register New Account?</a>
-                    <a href="./Forget.html">Forget Account Info?</a>
+                    <h3>Sign-up</h3>
+                    <aside>Register a new account here.</aside>
+                    <a href="./Signin.html">Already Have an account?</a>
                 </div>
                 <div class="input_field">
-                    <input type="text" id="uname" placeholder="Enter your Useranme">
-                    <input type="password" id="password" placeholder="Enter your Password">
+                    <input type="text" id="uname" placeholder="Enter your Username">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <input type="password" id="password" placeholder="Choose your password">
+                    <input type="password" id="password" placeholder="Confirm your password">
                     <input type="button" id="submit" value="Submit">
                 </div>
             </form>
@@ -54,11 +55,13 @@
     </div>
 
 
-    <div id="modal_window" class="error">
-        <h4>Error!</h4>
-        <span>There is no such account,<br>please check and try again!</span>
+    <div id="modal_window">
+        <h4>Verify Your Email</h4>
+        <span>A verification code has sent to your email.<br>Please Enter it here.</span>
         <div id="modal_button">
             <span id="btn_back">Ok</span>
+            <input type="textarea" placeholder="Enter your code here">
+            <span id="btn_resend">Resend</span>
         </div>
     </div>
     
@@ -66,5 +69,4 @@
     </div>
 
     <script src="./Signin_common.js"></script>
-    <script src="./Signin.js"></script>
 </body>

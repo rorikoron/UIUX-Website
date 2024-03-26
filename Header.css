@@ -55,6 +55,7 @@ body{
     gap: 2.4rem;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 .menubar_list > li{
     flex: 0 1 22rem;
