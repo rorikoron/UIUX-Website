@@ -17,6 +17,7 @@
 }
 
 form {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,10 +107,16 @@ form .input_field input[type=email], form .input_field input[type=password], for
 form .input_field input[type=email]:hover, form .input_field input[type=password]:hover, form .input_field input[type=text]:hover {
   background-color: rgba(236, 236, 236, 0.25);
 }
-form .input_field input[type=button] {
+form .form_btn {
+  width: 100%;
   position: absolute;
-  right: 0;
+  padding: 42px 4.2rem;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+form .form_btn input[type=button] {
   font-size: 2.4rem;
   padding: 10px 24px;
   border: 1px solid rgba(236, 236, 236, 0.5);
@@ -118,8 +125,14 @@ form .input_field input[type=button] {
   transition: all 0.4s;
   cursor: pointer;
 }
-form .input_field input[type=button]:hover {
+form .form_btn input[type=button]:hover {
   border-color: #ECECEC;
+}
+form .form_btn .verify {
+  display: none;
+}
+form .form_btn .back {
+  display: none;
 }
 
 .decoration {

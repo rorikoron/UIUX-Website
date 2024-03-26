@@ -17,6 +17,7 @@ $main_clr: #ECECEC;
     font-family: "Inter", sans-serif;
 }
 form{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,22 +78,7 @@ form{
                     background-color: rgba(236, 236, 236, 0.25);
                 }
             }
-            &[type=button]{
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                font-size: 2.4rem;
-                padding: 10px 24px;
-                border: 1px solid rgba(236, 236, 236, 0.5);
-                color: #ECECEC;
-                border-radius: 12px;
-                transition: all 0.4s;
-                cursor: pointer;
-
-                &:hover{
-                    border-color: $main_clr;
-                }
-            }
+            
                 /*
                     &[type=checkbox]{
                         margin: 22px 8px 22px 0;
@@ -127,6 +113,38 @@ form{
                 }
                 */
             }
+        
+    }
+
+    .form_btn{
+        width: 100%;
+        position: absolute;
+        padding: 42px 4.2rem;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        input {
+            &[type=button]{
+                font-size: 2.4rem;
+                padding: 10px 24px;
+                border: 1px solid rgba(236, 236, 236, 0.5);
+                color: #ECECEC;
+                border-radius: 12px;
+                transition: all 0.4s;
+                cursor: pointer;
+    
+                &:hover{
+                    border-color: $main_clr;
+                }
+            }
+        }
+        .verify{
+            display: none;
+        }
+        .back{
+            display: none;
+        }
     }
 }
 
