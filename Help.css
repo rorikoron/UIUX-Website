@@ -13,24 +13,29 @@
   font-family: "Inter", sans-serif;
 }
 .content_title {
+  padding: 16px 0;
   font-weight: 700;
-  font-size: 5.6rem;
+  font-size: 5.8rem;
   font-style: italic;
 }
 .content_expl {
-  padding: 8px 0;
+  padding: 16px 0;
   font-weight: 300;
   font-size: 3.2rem;
 }
 .content_expl span {
-  font-size: 3.8rem !important;
-  font-weight: 500 !important;
+  font-size: 3.6rem !important;
+  font-weight: 400 !important;
 }
-.content_expl p:first-child, .content_expl p:last-child {
-  padding: 34px 0;
+.content_expl p {
+  font-size: 3rem;
 }
-.content_expl p:first-child {
+.content_expl p:first-child span {
   font-style: italic;
+}
+.content_expl a {
+  color: #4E7FFF;
+  text-decoration: underline;
 }
 
 .decoration {
