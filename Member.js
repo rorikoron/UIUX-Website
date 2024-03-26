@@ -52,6 +52,16 @@ let updateMember = () =>{
     carrer_p.innerHTML = current_data.carrer;
 }
 
+let updateMember_l = () => {
+    data_index = (data_index + data.length-1) % data.length;
+    updateMember();
+}
+
+let updateMember_r = () => {
+    data_index = (data_index+1)%data.length;
+    updateMember();
+}
+
 window.addEventListener("load", ()=>{
     updateMember();
 })
@@ -62,12 +72,24 @@ window.addEventListener("DOMContentLoaded", () => {
         arrow_r = document.getElementsByClassName("arrow_r")[0];
 
     arrow_l.addEventListener("click", () => {
-        data_index = (data_index + data.length-1) % data.length;
-        updateMember();
+        updateMember_l();
     });
     
     arrow_r.addEventListener("click", () => {
-        data_index = (data_index+1)%data.length;
-        updateMember();
+        updateMember_r();
     });
+
+    window.addEventListener("keydown", (element) => {
+        if(element.ctrlKey){
+            switch (element.code){
+                case "ArrowLeft":
+                    updateMember_l();
+                    break;
+                case "ArrowRight":
+                    updateMember_r();
+                    break;
+            }
+
+        }
+    })
 })

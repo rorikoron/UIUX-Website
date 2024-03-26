@@ -57,6 +57,7 @@ form .input_field h4 {
   padding-left: 10%;
   font-size: 2.8rem;
   display: inline-block;
+  align-self: flex-start;
 }
 form .input_field input {
   /*

@@ -12,6 +12,8 @@ $main_clr: #ECECEC;
         position: absolute;
         display: inline-block;
         padding: 10px;
+        height: 4.6rem;
+        width: 4.6rem;
         transition: all 0.3s;
         cursor: pointer;
         &:hover{
@@ -33,7 +35,7 @@ $main_clr: #ECECEC;
             }
         }
         &.arrow_r{
-            right: calc(12% + 10px);
+            right: calc(10% + 2.3rem);
             &::before{
                 transform: rotate(45deg);
             }
