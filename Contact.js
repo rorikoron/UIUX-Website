@@ -17,7 +17,7 @@ let closeModal = () => {
     window.style.visibility = "hidden";
 }
 window.addEventListener("DOMContentLoaded", () => {
-    const dom = document.getElementsByClassName("card_media")[0].getElementsByTagName("img");
+    const dom = document.getElementsByClassName("content_media")[0].getElementsByTagName("img");
     const layer = document.getElementById("modal_layer");
     const btn_back = document.getElementById("btn_back");
     const btn_toward = document.getElementById("btn_toward");
