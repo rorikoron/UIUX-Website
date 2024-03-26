@@ -319,7 +319,7 @@ form .form_btn .back {
   flex-direction: row-reverse;
 }
 
-#modal_button > * {
+#modal_button > span {
   border: 1px solid #ECECEC;
   border-radius: 12px;
   padding: 10px 24px;
@@ -329,6 +329,10 @@ form .form_btn .back {
   font-size: 2.4rem;
   color: #ECECEC;
   cursor: pointer;
+}
+
+#modal_button a {
+  font-size: 2.6rem;
 }
 
 #modal_button > input {

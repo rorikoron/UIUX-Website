@@ -30,5 +30,11 @@ window.addEventListener("DOMContentLoaded", () => {
     btn_back.addEventListener("click", () => {
         closeModal();
     })
+    window.addEventListener("keydown", (element) => {
+        if(element.code == "Enter"&&element.altKey){
+            closeModal();
+        }
+    });
+
 
 })

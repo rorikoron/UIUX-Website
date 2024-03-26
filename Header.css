@@ -92,3 +92,8 @@ body{
 .menubar_link:hover::after{
     width: 100%;
 }
+
+.link{
+    color: #4E7FFF !important;
+    text-decoration: underline;
+}

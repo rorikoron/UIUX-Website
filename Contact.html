@@ -27,7 +27,7 @@
             <li><a href="./Contact.html" class="menubar_link">Contact</a></li>
             <li><a href="./Help.html" class="menubar_link">Help</a></li>
         </ul>
-        <span class="menubar_signin menubar_link"><a href="./Signin.html">Sing-in</a></span>
+        <span class="menubar_signin menubar_link"><a href="./Signin.html">Sign-In</a></span>
     </nav>
 
     <div class="wrapper">
@@ -65,12 +65,18 @@
             
     </div>
 
-    <div id="modal_window">
-        <h4>Warning!</h4>
+    <div id="modal_window" class="attention">
+        <h4>Attention!</h4>
         <span>The link is trying to leave the website. <br>Trust and leave?</span>
         <div id="modal_button">
-            <a href="https://google.com"><span id="btn_toward">Trust it</span></a>
-            <span id="btn_back">Back</span>
+            <div id="modal_btn">
+                <a href="https://google.com"><span id="btn_toward">Trust it</span></a>
+                <span id="btn_back">Back</span>
+            </div>
+            <div id="modal_cbx">
+                <input id="cbx" type="checkbox">
+                <label for="cbx">Don't show this again</label>
+            </div>
         </div>
     </div>
     
@@ -78,4 +84,5 @@
     </div>
 
     <script src="Contact.js"></script>
+    <script src="./Shortcut.js"></script>
 </body>
