@@ -15,6 +15,7 @@ var data = [
         speciality: "程式",
         hobby: "程式，打電玩",
         theme: "NLP",
+        carrer: "2023ICPC銅牌"
     }, {
         name: "伊東和毅",
         sex: "男",
@@ -22,6 +23,7 @@ var data = [
         speciality: "繪畫、程式、語言",
         hobby: "繪畫、程式",
         theme: "無",
+        carrer: "精通三語言"
     }
 ]
 // init index

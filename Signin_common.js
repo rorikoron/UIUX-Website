@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
         closeModal();
     })
     window.addEventListener("keydown", (element) => {
-        if(element.code == "Enter"&&element.altKey){
+        if(element.altKey && element.code == "Enter"){
             closeModal();
         }
     });
