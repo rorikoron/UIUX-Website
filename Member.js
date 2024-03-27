@@ -69,7 +69,14 @@ window.addEventListener("load", ()=>{
 })
 
 window.addEventListener("DOMContentLoaded", () => {
+    
+    // storing data to cookie
+    data.forEach((element, index) => {
+        let element_json = JSON.stringify(element);
+        document.cookie = "member"+ index + "=" + element_json;
+    });
 
+    // setting arrow
     let arrow_l = document.getElementsByClassName("arrow_l")[0],
         arrow_r = document.getElementsByClassName("arrow_r")[0];
 

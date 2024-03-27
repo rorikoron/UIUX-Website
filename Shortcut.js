@@ -3,22 +3,22 @@ window.addEventListener("DOMContentLoaded", () => {
         if(element.altKey){
             switch (element.code){
                 case "KeyT":
-                    location.href = "../index.html";
+                    location.href = "./index.html";
                     break;
                 case "KeyM":
-                    location.href = "../Member.html";
+                    location.href = "./Member.html";
                     break;
                 case "KeyO":
-                    location.href = "../Other.html";
+                    location.href = "./Other.html";
                     break;
                 case "KeyC":
-                    location.href = "../Contact.html";
+                    location.href = "./Contact.html";
                     break;
                 case "KeyH":
-                    location.href = "../Help.html";
+                    location.href = "./Help.html";
                     break;
                 case "KeyS":
-                    location.href = "../Signin.html";
+                    location.href = "./Signin.html";
                     break;
             }
         }

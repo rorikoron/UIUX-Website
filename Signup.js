@@ -37,6 +37,8 @@ let change_field = () => {
 let current_field = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
+
+
     change_field();
     const btn_next = document.getElementsByClassName("next")[0];
     const btn_back = document.getElementsByClassName("back")[0];
