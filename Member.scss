@@ -1,12 +1,12 @@
 
 $main_clr: #ECECEC;
 .wrapper{
-    flex: 1 1 auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow-y: hidden;
 
     .arrow {
         position: absolute;
@@ -59,7 +59,7 @@ $main_clr: #ECECEC;
         padding: 48px 38px;
         .card_wrap{
         height: 100%;
-        overflow-y: scroll;
+        overflow-y: auto;
 
         }
         div{
@@ -90,7 +90,7 @@ $main_clr: #ECECEC;
             margin-right: 8px;
             vertical-align: top;
             border-radius: 20px;
-            background-color: #00FFFF;
+            background-color: #45D6FD;
         }
     }
 }

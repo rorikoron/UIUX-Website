@@ -7,7 +7,9 @@ var data = [
         hobby: "音樂、程式",
         theme: "音訊處理、音效設計、MaxMSP",
         carrer: `・台灣音樂遊戲 Gadvia 樂曲收錄<br>
-        ・2023 M3-秋 日本社團參與發行`
+        ・2023 M3-秋 日本社團參與發行`,
+        subject: `UIUX Design, Sound Design, Live Coding
+        `
     }, {
         name: "陳文獻",
         sex: "男",
@@ -15,7 +17,9 @@ var data = [
         speciality: "程式",
         hobby: "程式，打電玩",
         theme: "NLP",
-        carrer: "2023ICPC銅牌"
+        carrer: "2023ICPC銅牌",
+        subject: `演算法, 離散數學, 資料科學
+        `
     }, {
         name: "伊東和毅",
         sex: "男",
@@ -23,7 +27,9 @@ var data = [
         speciality: "繪畫、程式、語言",
         hobby: "繪畫、程式",
         theme: "無",
-        carrer: "精通三語言"
+        carrer: "精通三語言",
+        subject: `Linux與邊緣計算, 程式設計, 計算機概論
+        `
     }
 ]
 // init index
@@ -42,6 +48,7 @@ let updateMember = () =>{
     hobby_p = document.querySelector("#hobby"),
     theme_p = document.querySelector("#theme"),
     carrer_p = document.querySelector("#carrer");
+    subject_p = document.querySelector("#subject")
 
     let current_data = data[data_index];
 
@@ -52,6 +59,7 @@ let updateMember = () =>{
     hobby_p.innerHTML = current_data.hobby;
     theme_p.innerHTML = current_data.theme;
     carrer_p.innerHTML = current_data.carrer;
+    subject_p.innerHTML = current_data.subject;
 }
 
 let updateMember_l = () => {

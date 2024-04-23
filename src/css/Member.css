@@ -1,0 +1,126 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+}
+.wrapper .arrow {
+  position: absolute;
+  display: inline-block;
+  padding: 10px;
+  height: 4.6rem;
+  width: 4.6rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.wrapper .arrow:hover {
+  opacity: 0.4;
+}
+.wrapper .arrow::before {
+  content: "";
+  width: 4.6rem;
+  height: 4.6rem;
+  border-top: solid 3px #ECECEC;
+  border-right: solid 3px #ECECEC;
+  position: absolute;
+}
+.wrapper .arrow.arrow_l {
+  left: 10%;
+}
+.wrapper .arrow.arrow_l::before {
+  transform: rotate(-135deg);
+}
+.wrapper .arrow.arrow_r {
+  right: calc(10% + 2.3rem);
+}
+.wrapper .arrow.arrow_r::before {
+  transform: rotate(45deg);
+}
+
+.card {
+  width: 72%;
+  min-width: 500px;
+  height: 90%;
+  min-height: 50px;
+  border-radius: 25px;
+  border: 2px solid #474747;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+.card_content {
+  overflow-y: hidden;
+  height: 100%;
+  padding: 48px 38px;
+}
+.card_content .card_wrap {
+  height: 100%;
+  overflow-y: auto;
+}
+.card_content div {
+  margin: 16px 0;
+}
+.card_content div:not(:first-child) {
+  font-size: 3.4rem;
+  font-weight: 200;
+  color: #ECECEC;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.04);
+  padding: 12px;
+  border-radius: 8px;
+  line-height: 150%;
+}
+.card_title {
+  font-size: 5.2rem;
+  font-weight: 500;
+  position: relative;
+}
+.card_title::before {
+  content: "";
+  display: inline-block;
+  height: 5.2rem;
+  width: 8px;
+  margin-right: 8px;
+  vertical-align: top;
+  border-radius: 20px;
+  background-color: #45D6FD;
+}
+
+.decorate {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.02);
+  clip-path: inset(0 0 0 0 round 25px);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.rec {
+  height: 24rem;
+  width: 46rem;
+  border-radius: 50%;
+  opacity: 0.9;
+  position: absolute;
+}
+
+#rec1 {
+  top: 80px;
+  right: 0px;
+  background-color: rgba(149, 46, 158, 0.65);
+}
+
+#rec2 {
+  top: 0px;
+  right: 188px;
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+#rec3 {
+  bottom: -20px;
+  left: -20px;
+  background-color: rgba(192, 43, 78, 0.5);
+}/*# sourceMappingURL=Member.css.map */
