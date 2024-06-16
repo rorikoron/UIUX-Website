@@ -74,6 +74,7 @@
   padding: 16px 0;
   font-weight: 700;
   font-size: 5.8rem;
+  font-style: italic;
 }
 .content_expl {
   padding: 16px 0;
@@ -117,8 +118,9 @@
   border-radius: 12px;
   padding: 30px;
   font-size: 1.8rem;
+  font-style: italic;
   z-index: 10;
-  background-color: #ffe0e0;
+  background-color: #151515;
   transition: all 0.4s;
   opacity: 0;
   visibility: hidden;
@@ -153,8 +155,8 @@
 #modal_button span {
   font-size: 2.4rem;
   padding: 10px 24px;
-  border: 1px solid rgb(73, 28, 28);
-  color: rgb(73, 28, 28);
+  border: 1px solid #ECECEC;
+  color: #ECECEC;
   border-radius: 12px;
   margin-left: 20px;
   float: right;
@@ -162,11 +164,11 @@
 }
 
 .attention {
-  color: rgb(219, 168, 58);
+  color: #FFBD5A;
 }
 
 #modal_cbx {
-  color: rgb(73, 28, 28);
+  color: #ECECEC;
   font-size: 2.2rem;
 }
 #modal_cbx > input[type=checkbox] {
@@ -174,22 +176,6 @@
   background-color: transparent;
 }
 
-.modal_group {
-  display: flex;
-  gap: 8px;
-  flex-direction: row;
-  vertical-align: middle;
-  align-items: center;
-}
-
-.modal_icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  object-fit: cover;
-  color: rgb(13, 141, 77);
-}
-
 #btn_toward {
-  background-color: rgb(255, 88, 88);
+  background-color: #313131;
 }/*# sourceMappingURL=Contact.css.map */
