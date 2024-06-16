@@ -16,14 +16,14 @@
   cursor: pointer;
 }
 .wrapper .arrow:hover {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .wrapper .arrow::before {
   content: "";
   width: 4.6rem;
   height: 4.6rem;
-  border-top: solid 3px #ECECEC;
-  border-right: solid 3px #ECECEC;
+  border-top: solid 3px rgb(73, 28, 28);
+  border-right: solid 3px rgb(73, 28, 28);
   position: absolute;
 }
 .wrapper .arrow.arrow_l {
@@ -32,11 +32,19 @@
 .wrapper .arrow.arrow_l::before {
   transform: rotate(-135deg);
 }
+.wrapper .arrow.arrow_l:hover {
+  transform: scale(1.4);
+  padding-right: 16%;
+}
 .wrapper .arrow.arrow_r {
   right: calc(10% + 2.3rem);
 }
 .wrapper .arrow.arrow_r::before {
   transform: rotate(45deg);
+}
+.wrapper .arrow.arrow_r:hover {
+  transform: scale(1.4);
+  padding-left: 16%;
 }
 
 .card {
@@ -58,19 +66,27 @@
 .card_content .card_wrap {
   height: 100%;
   overflow-y: auto;
+  position: relative;
 }
-.card_content div {
-  margin: 16px 0;
+.card_content .card_wrap > .card_icon {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  right: 32px;
+  border-radius: 24px;
 }
-.card_content div:not(:first-child) {
+.card_content .card_wrap > div:not(:first-child) {
   font-size: 3.4rem;
   font-weight: 200;
-  color: #ECECEC;
+  color: rgb(73, 28, 28);
   width: 100%;
-  background-color: rgba(240, 248, 255, 0.04);
   padding: 12px;
   border-radius: 8px;
   line-height: 150%;
+}
+.card_content .card_wrap > div {
+  margin: 16px 0;
 }
 .card_title {
   font-size: 5.2rem;
@@ -85,7 +101,7 @@
   margin-right: 8px;
   vertical-align: top;
   border-radius: 20px;
-  background-color: #45D6FD;
+  background-color: #7f87cd;
 }
 
 .decorate {
