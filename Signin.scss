@@ -1,4 +1,4 @@
-$main_clr: #ECECEC;
+$main_clr: rgb(73, 28, 28);
 
 .wrapper{
     flex: 1 1 auto;
@@ -11,7 +11,7 @@ $main_clr: #ECECEC;
     min-width: 800px;
     height: 420px;
     box-sizing: border-box;
-    border: 1px solid rgba(238, 204, 238, 0.385);
+    border: 1px solid rgb(73, 28, 28);
     border-radius: 25px;
     color: $main_clr;
     font-family: "Inter", sans-serif;
@@ -31,7 +31,6 @@ form{
             font: {
                 weight: 600;
                 size: 6rem;
-                style: italic;
             }
         }
         & > aside{
@@ -44,7 +43,7 @@ form{
             font-size: 2.4rem;
             display: block;
             text-decoration: underline;
-            color: #4E7FFF;
+            color: #7f87cd;
         }
     }
     .input_field{
@@ -70,12 +69,12 @@ form{
                 font-size: 20px;
                 padding: 6px 8px;
                 border-radius: 4px;
-                background-color: rgba(236, 236, 236, 0.085);
+                background-color: rgba(235, 235, 235, 0.85);
                 color: $main_clr;
                 transition: all 0.4s;
 
                 &:hover{
-                    background-color: rgba(236, 236, 236, 0.25);
+                    background-color: rgba(236, 171, 171, 0.65);
                 }
             }
             
@@ -128,8 +127,8 @@ form{
             &[type=button]{
                 font-size: 2.4rem;
                 padding: 10px 24px;
-                border: 1px solid rgba(236, 236, 236, 0.5);
-                color: #ECECEC;
+                border: 1px solid rgb(73, 28, 28);
+                color: rgb(73, 28, 28);
                 border-radius: 12px;
                 transition: all 0.4s;
                 cursor: pointer;
@@ -297,9 +296,8 @@ form{
     border-radius: 12px;
     padding: 30px;
     font-size: 1.8rem;
-    font-style: italic;
     z-index: 10;
-    background-color: #151515;
+    background-color: #ffe0e0;
     transition: all 0.4s;
     opacity: 0;
     visibility: hidden;
@@ -309,12 +307,27 @@ form{
     flex-direction: column;
 }
 .error{
-    color: #FF5A5A;
+    color: #ff0000;
 }
 .sucess{
-    color: #20EA89;
+    color: #0d8d4d;
+}
+.modal_group{
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+}
+.modal_icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    color: rgb(13, 141, 77);
 }
 #modal_window h4{
+    display: inline-block;
     font-size: 4rem;
     font-weight: 600;
 }
@@ -335,14 +348,14 @@ form{
     flex-direction: row-reverse;
 }
 #modal_button > span{
-    border: 1px solid #ECECEC;
+    border: 1px solid $main_clr;
     border-radius: 12px;
     padding: 10px 24px;
 
 }
 #modal_button span{
     font-size: 2.4rem;
-    color: #ECECEC;
+    color: $main_clr;
     cursor: pointer;
 }
 #modal_button a{
