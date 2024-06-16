@@ -16,6 +16,7 @@
 .content > p{
     font-weight: 100;
     font-size: 4rem;
+    font-style: italic;
     font-weight: 300;
 }
 .content span{

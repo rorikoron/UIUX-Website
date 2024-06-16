@@ -4,10 +4,10 @@
 
 html{
     font-size: 8.4px !important;
-    color: rgb(73, 28, 28);
+    color: white;
 }
 body{
-    background-color: rgb(255, 236, 228);
+    background-color: rgb(10, 10, 10);
     height: 100vh;
     max-width: 100vw;
     position: relative;
@@ -16,7 +16,8 @@ body{
     grid-template-rows: 100px 1fr;
 }
 .icon{
-    font-family: "Noto Serif", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
     font-weight: bold;
 }
 .menubar{
@@ -37,7 +38,7 @@ body{
     height: 80px;
     width: 100%;
     text-decoration: none;
-    color: rgb(73, 28, 28);
+    color: white;
     display: inline-block;
     text-align: center;
     transition: 0.6s all;
@@ -71,21 +72,16 @@ body{
     flex: 0 1 20rem;
     text-align: center;
 }
-.menubar_list_icon{
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
-}
 
 .menubar_link{
     width: 100%;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 2.5rem;
     position: relative;
 }
 .menubar_link::after{
     content: "";
-    background-color: rgb(73, 28, 28);
+    background-color: white;
     width: 0%;
     height: 2px;
     transition: all 0.6s;
@@ -98,16 +94,14 @@ body{
 }
 
 .link{
-    color: #7f87cd !important;
+    color: #4E7FFF !important;
     text-decoration: underline;
 }
 
 .primary{
-    color: #7f87cd !important;
+    color: #45D6FD !important;
 }
-.primary img{
-    filter: invert(55%) sepia(90%) saturate(224%) hue-rotate(196deg) brightness(84%) contrast(90%);
-}
+
 /*
 @media only screen and (max-width: 960px) {
     .menubar{

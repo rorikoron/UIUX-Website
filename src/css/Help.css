@@ -15,6 +15,7 @@
   padding: 16px 0;
   font-weight: 700;
   font-size: 5.8rem;
+  font-style: italic;
 }
 .content_expl {
   padding: 16px 0;
@@ -27,6 +28,9 @@
 }
 .content_expl p {
   font-size: 3rem;
+}
+.content_expl p:first-child span {
+  font-style: italic;
 }
 .content_expl a {
   color: #4E7FFF;

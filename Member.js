@@ -9,8 +9,7 @@ var data = [
         carrer: `・台灣音樂遊戲 Gadvia 樂曲收錄<br>
         ・2023 M3-秋 日本社團參與發行`,
         subject: `UIUX Design, Sound Design, Live Coding
-        `,
-        icon_src: "./P_20231209_103230.jpg"
+        `
     }, {
         name: "陳文獻",
         sex: "男",
@@ -20,8 +19,7 @@ var data = [
         theme: "NLP",
         carrer: "2023ICPC銅牌",
         subject: `演算法, 離散數學, 資料科學
-        `,
-        icon_src: "./60061.jpg"
+        `
     }, {
         name: "伊東和毅",
         sex: "男",
@@ -31,14 +29,13 @@ var data = [
         theme: "無",
         carrer: "精通三語言",
         subject: `Linux與邊緣計算, 程式設計, 計算機概論
-        `,
-        icon_src: "./11238.jpg"
+        `
     }
 ]
 // init index
 var data_index = 0;
 
-var name_p, sex_p, background_p, speciality_p, hobby_p, theme_p, icon_p;
+var name_p, sex_p, background_p, speciality_p, hobby_p, theme_p;
 
 // get each;
 
@@ -51,8 +48,7 @@ let updateMember = () =>{
     hobby_p = document.querySelector("#hobby"),
     theme_p = document.querySelector("#theme"),
     carrer_p = document.querySelector("#carrer");
-    subject_p = document.querySelector("#subject");
-    icon_p = document.querySelectorAll(".card_icon")[0];
+    subject_p = document.querySelector("#subject")
 
     let current_data = data[data_index];
 
@@ -64,7 +60,6 @@ let updateMember = () =>{
     theme_p.innerHTML = current_data.theme;
     carrer_p.innerHTML = current_data.carrer;
     subject_p.innerHTML = current_data.subject;
-    icon_p.setAttribute("src", current_data.icon_src);
 }
 
 let updateMember_l = () => {
